@@ -1,21 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const forms = document.querySelectorAll("form");
+    alert("Thanks for coming to NovaTech University Website!");
 
-    forms.forEach(function(form) {
-        form.addEventListener("submit", function(e) {
-            const nameInput = form.querySelector('input[type="text"]');
-            
-            if (!nameInput || nameInput.value.trim() === "") {
-                alert("Thanks for coming in NovaTech University Website!");
-                if (nameInput)
-                nameInput.focus();
-                return;
-            }
+    const registerForm = document.getElementById("registerForm");
+
+    if (registerForm) {
+        registerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
 
             alert("Thank you! Your form has been submitted successfully.");
-            form.submit();
-        });
-    });
 
+            registerForm.submit();
+        });
+    }
 });
