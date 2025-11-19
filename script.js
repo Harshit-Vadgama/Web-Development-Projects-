@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             alert("Thank you! Your form has been submitted successfully.");
 
-            registerForm.submit();
+            HTMLFormElement.prototype.submit.call(registerForm);
         });
     }
 });
