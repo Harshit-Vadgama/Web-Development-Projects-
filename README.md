@@ -2,5 +2,5 @@
 
 Novatech university registration website which is made by @Harshit Vadgama using HTML5, CSS, JavaScript, Bootstrap responsiveness.
 
-GitHub — Harshit‑Vadgama
 
+![Harshit's GitHub](https://github.com/Harshit-Vadgama.png)
